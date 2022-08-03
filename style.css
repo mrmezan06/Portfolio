@@ -171,4 +171,38 @@ html {
     background-color: #e41c6f;
     border-radius: 0.3rem;
 }
+
+.services {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service {
+    text-align: center;
+}
+
+.service:first-child, .service:last-child {
+    align-self: flex-start;
+}
+
+.service i {
+    font-size: 10rem;
+    color: #888;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+
+.service h2 {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #777;
+    width: 25rem;
+    letter-spacing: .3rem;
+    transform: skew(-10deg); 
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+
 /* End Section 2 */
