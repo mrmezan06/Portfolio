@@ -252,6 +252,7 @@ html {
     position: relative;
     overflow: hidden;
     transition: box-shadow 0.5s;
+    border-radius: 2rem;
 }
 
 .project:hover {
@@ -304,6 +305,7 @@ html {
     position: absolute;
     bottom: -5rem;
     transition: bottom 0.3s;
+    border-radius: 1rem;
 }
 
 .project:hover .project-link {
@@ -344,6 +346,7 @@ html {
     font-size: 1.5rem;
     border: 0.2rem solid #e41c6f;
     color: #555;
+    border-radius: 1rem;
 }
 
 .contact-form textarea {
@@ -396,3 +399,89 @@ html {
     text-transform: capitalize;
 }
 /* End Section 5 */
+
+/* Responsive */
+@media(max-width: 1200px) {
+    .services {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        margin: 3rem 2rem;
+    }
+
+    .section-4 {
+        height: 80vh;
+    }
+}
+
+@media(max-width: 800px) {
+    .section-1-heading {
+        font-size: 4rem;
+    }
+
+    .progress-bar {
+        width: 50rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .section-1-heading {
+        font-size: 3rem;
+    }
+
+    .navbar-link {
+        margin: 0 2rem;
+        font-size: 1.5rem;
+    }
+
+    .section-2 {
+        padding: 10rem;
+    }
+
+    .section-heading {
+        margin-bottom: 10rem;
+    }
+
+    .progress-bar {
+        width: 45rem;
+    }
+
+    .project-img {
+        width: 40rem;
+    }
+
+    .copyright {
+        width: 70%;
+    }
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+
+    .section-1-heading {
+        font-size: 2.5rem;
+    }
+
+    .navbar-link {
+        margin: 0 1.5rem;
+    }
+
+    .section-heading {
+        text-align: center;
+    }
+
+    .progress-bar {
+        width: 40rem;
+    }
+}
+/* End Responsive */
