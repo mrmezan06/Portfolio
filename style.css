@@ -22,6 +22,16 @@ html {
     align-items: center;
 }
 
+.section-heading {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: 0.3rem solid #333;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+
 /* Section 1 */
 .section-1 {
     width: 100%;
@@ -128,15 +138,6 @@ html {
     align-items: center;
 }
 
-.section-2-heading {
-    font-size: 5rem;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    margin-bottom: 15rem;
-    border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.5rem #555;
-}
 
 .progress-bars-wrapper {
     margin-bottom: 10rem;
@@ -206,3 +207,90 @@ html {
 }
 
 /* End Section 2 */
+
+/* Section 3 */
+.section-3 {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: #eef;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.projects-wrapper {
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.project:hover {
+    box-shadow: 1rem 1rem 1rem #777;
+}
+
+.project-text {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: -10rem;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.project:hover .project-text {
+    top: 5rem;
+    transition: top 0.3s 0.3s;
+}
+
+.project-name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.project-technologies {
+    font-size: 1.8rem;
+    color: #e06196;
+}
+
+.project-img {
+    width: 40rem;
+    transition: opacity 0.3s;
+}
+
+.project:hover .project-img {
+    opacity: 0.3;
+}
+
+.project-link {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.1rem;
+    border: 0.3rem solid #e41c6f;
+    padding: 0 1rem;
+    background-color: white;
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom 0.3s;
+}
+
+.project:hover .project-link {
+    bottom: 5rem;
+    transition: bottom 0.3s 0.3s;
+}
+/* End Section 3 */
