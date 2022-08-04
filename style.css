@@ -14,6 +14,7 @@
 html {
     font-size: 62.5%;
     /* Default 16px 1rem convert to 10px 1rem */
+    scroll-behavior: smooth;
 }
 
 .center {
@@ -94,6 +95,13 @@ html {
     height: 5rem;
     background-color: #e41c6f;
     box-shadow: 0.2rem 0.2rem 0.5rem #555;
+    position: absolute;
+    z-index: 300;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 .navbar-link {
@@ -105,6 +113,10 @@ html {
     text-transform: uppercase;
     position: relative;
     transition: color 0.2s;
+}
+
+.change.navbar-link {
+    color: #fff;
 }
 
 .navbar-link:hover {
@@ -120,6 +132,10 @@ html {
     right: -15%;
     bottom: -0.3rem;
     transition: width 0.2s;
+}
+
+.change.navbar-link::before {
+    width: 130%;
 }
 
 .navbar-link:hover::before {
@@ -167,10 +183,11 @@ html {
 }
 
 .progress-percent {
-    width: 90%;
+    width: 0;
     height: 100%;
     background-color: #e41c6f;
     border-radius: 0.3rem;
+    transition: width 1s 0.5s ease-in-out;
 }
 
 .services {
